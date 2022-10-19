@@ -1,11 +1,11 @@
 import { useParams } from "react-router-dom";
 import products from "../data/logements.json";
 
-import Star from "../components/Stars";
-import Server from "../components/Server";
-import ImageSlider from "../components/ImageSlider";
-import Tags from "../components/Tags";
-import Collapse from "../components/Collapse";
+import Star from "../components/Accommodation/Stars";
+import Server from "../components/Accommodation/Server";
+import ImageSlider from "../components/Accommodation/ImageSlider";
+import Tags from "../components/Accommodation/Tags";
+import Collapse from "../components/Accommodation/Collapse";
 
 const Accommodation = () => {
   const { productId } = useParams();

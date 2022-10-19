@@ -1,8 +1,8 @@
 import React from "react";
 
 // style
-import redstar from "../assets/redStar.svg";
-import greystar from "../assets/greyStar.svg";
+import redstar from "../../assets/redStar.svg";
+import greystar from "../../assets/greyStar.svg";
 
 const Star = ({ rating }) => {
   const stars = [1, 2, 3, 4, 5];

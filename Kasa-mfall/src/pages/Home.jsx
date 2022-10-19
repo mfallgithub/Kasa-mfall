@@ -9,7 +9,7 @@ import Thumbnails from "../components/Thumbnails";
 
 const slogan = marketdata.slogan;
 
-const Products = () => {
+const Home = () => {
   return (
     <div className="home">
       <div className="home__banner">
@@ -30,4 +30,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default Home;

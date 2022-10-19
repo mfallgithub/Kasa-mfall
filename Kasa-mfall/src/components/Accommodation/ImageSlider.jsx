@@ -2,8 +2,8 @@ import React from "react";
 import { useState } from "react";
 
 //Style
-import arrowLeft from "../assets/arrowLeft.svg";
-import arrowRight from "../assets/arrowRight.svg";
+import arrowLeft from "../../assets/arrowLeft.svg";
+import arrowRight from "../../assets/arrowRight.svg";
 
 const ImageSlider = ({ slides }) => {
   const [current, setCurrent] = useState(0);

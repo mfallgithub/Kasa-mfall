@@ -1,6 +1,6 @@
 import Banner from "../components/Header/Banner";
 import aboutData from "../data/aboutData";
-import Collapse from "../components/Collapse";
+import Collapse from "../components/Accommodation/Collapse";
 import imageBanner from "../assets/aboutbannerDesktop.png";
 
 const About = () => {
