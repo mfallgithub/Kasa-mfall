@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import ReactDOM from "react-dom";
 //style by Sass Partials
-import "./main.css";
+import "./styles/style.css";
 
 //pages by React BrowserRouter
 import Home from "./pages/Home";
@@ -26,7 +26,7 @@ ReactDOM.render(
       <StyledNavbar />
       <Routes>
         <Route index element={<Home />} />
-        <Route path="/propos" element={<About />} />
+        <Route path="/about" element={<About />} />
         <Route path="products/:productId" element={<Singleproduct />} />
         <Route path="/kaza" element={<Navigate to="/" replace />} />
         <Route path="*" element={<Error />} />

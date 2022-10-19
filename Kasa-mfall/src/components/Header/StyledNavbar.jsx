@@ -19,7 +19,7 @@ const StyledNavbar = () => {
           Accueil
         </NavLink>
         <NavLink
-          to="/propos"
+          to="/about"
           className={({ isActive }) =>
             isActive ? "navbar__links--active" : "navbar__links--inactive"
           }
