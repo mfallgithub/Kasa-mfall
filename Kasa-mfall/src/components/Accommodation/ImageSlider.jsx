@@ -1,10 +1,27 @@
 import React from "react";
 import { useState } from "react";
+import styled from "styled-components";
 
 //Style
 import arrowLeft from "../../assets/arrowLeft.svg";
 import arrowRight from "../../assets/arrowRight.svg";
+const NumOfSlide = styled.div`
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  position: absolute;
+  left: 48.95%;
+  right: 49.11%;
+  top: 86.19%;
+  bottom: 6.01%;
 
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+  color: #ffffff;
+`;
 const ImageSlider = ({ slides }) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
@@ -46,6 +63,9 @@ const ImageSlider = ({ slides }) => {
           </div>
         </>
       ) : null}
+      <NumOfSlide>
+        {current + 1}/{length}
+      </NumOfSlide>
     </div>
   );
 };
