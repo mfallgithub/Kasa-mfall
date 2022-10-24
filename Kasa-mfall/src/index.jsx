@@ -1,5 +1,6 @@
 //react Framework
 import React from "react";
+import { Redirect } from 'react-router';
 import {
   BrowserRouter as Router,
   Route,
@@ -19,6 +20,7 @@ import Error from "./pages/Error";
 //components Header && Footer
 import StyledNavbar from "./components/Header/StyledNavbar";
 import Footer from "./components/Footer";
+import PageNotFound from "./pages/Error";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -28,7 +30,7 @@ ReactDOM.render(
         <Route index element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="products/:productId" element={<Singleproduct />} />
-        <Route path="/kaza" element={<Navigate to="/" replace />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
