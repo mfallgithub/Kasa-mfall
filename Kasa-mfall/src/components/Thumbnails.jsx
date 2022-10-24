@@ -5,7 +5,7 @@ const Thumbnails = ({ image, title }) => {
     <div className="thumb">
       <img src={image} alt="" className="thumb__img" />
       <div className="thumb__overlay"></div>
-      <h2 className="thumb__title">{title}</h2>
+      <h2 className="thumb__title_image">{title}</h2>
     </div>
   );
 };
